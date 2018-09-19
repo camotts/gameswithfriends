@@ -1,6 +1,6 @@
 class Client {
     constructor(addPlayer) {
-        this.socket = io.connect('http://localhost:3000')
+        this.socket = io.connect('http://gameswithfriends-216915.appspot.com')
 
         this.socket.on('newPlayer', addPlayer)
         this.socket.on('movement', handleMovement)

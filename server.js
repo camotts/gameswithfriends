@@ -6,7 +6,7 @@ const Logger = require('./Asteroids/script/logger.js')
 var logger = new Logger(true)
 
 var app = express();
-var server = app.listen(3000);
+var server = app.listen(8080);
 var io = socket(server);
 
 app.use("/asteroids", express.static('Asteroids'));
